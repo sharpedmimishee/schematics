@@ -34,8 +34,8 @@ async fn main() {
                 )
                 .unwrap(),
             )
-            .background_margin(prelude::RectOffset::new(0.6, 0.6, 0.2, 0.2))
-            .margin(prelude::RectOffset::new(18.0, 18.0, 15.0, 15.0))
+            .background_margin(prelude::RectOffset::new(0., 0.,0., 0.))
+            .margin(prelude::RectOffset::new(8.0, 8.0, 8.0, 8.0))
             .background_hovered(
                 prelude::Image::from_file_with_format(
                     include_bytes!("assets/ui_assets/button.png"),
@@ -110,8 +110,8 @@ async fn main() {
                     )
                     .unwrap(),
                 )
-                .background_margin(prelude::RectOffset::new(0.6, 0.6, 0.2, 0.2))
-                .margin(prelude::RectOffset::new(18.0, 18.0, 15.0, 15.0))
+                .background_margin(prelude::RectOffset::new(16., 16., 16., 16.))
+                .margin(prelude::RectOffset::new(8., 0., -2., -2.))
                 .background_hovered(
                     prelude::Image::from_file_with_format(
                         include_bytes!("assets/ui_assets/button.png"),
