@@ -1,4 +1,4 @@
-use macroquad::{math::vec2, prelude, text::Font, ui::root_ui};
+use macroquad::{math::vec2, prelude, text::Font, ui::root_ui, window::next_frame};
 fn adjuster(ratio: u32, max: u32, min: u32) -> f32 {
     let default: f32 = prelude::screen_width()/ratio as f32;
     if (max as f32) < default {return max as f32};
@@ -34,5 +34,6 @@ concepts - The Flipper Cell, The Single Cell Generator, plasticgaming99, mimishe
         if exit {
             return 0;
         }
+        next_frame().await
     }
 }
