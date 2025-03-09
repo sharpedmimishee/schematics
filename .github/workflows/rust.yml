@@ -26,4 +26,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: schematics
-        path: target/${{ matrix.BUILD_TARGET }}/schematics
+        path: target/debug/schematics.exe
