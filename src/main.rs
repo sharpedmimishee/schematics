@@ -1,10 +1,11 @@
-use std::{process, time::{SystemTime, UNIX_EPOCH}};
+use std::{fs, path::Path, process, time::{SystemTime, UNIX_EPOCH}};
 
 use macroquad::{prelude, rand::ChooseRandom, ui::{self, hash, root_ui, Skin}};
 mod scene;
-
+mod features;
 #[macroquad::main("Schematics")]
 async fn main() {
+    let cells: Vec<features::celltype::Celltype> = features::register::main();
     let splash_table: Vec<&str> = vec!["What... Is it Cell Machine!?", "low quality...", "please please please please", "I think you don't know who made this.", "Struct-Rethink"];
     prelude::rand::srand(SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_secs());
     let chosen = ChooseRandom::choose(&splash_table[..]).unwrap();
@@ -68,8 +69,10 @@ async fn main() {
     loop {
         root_ui().push_skin(&skin);
         match next_scene {
-            0 => next_scene = scene::mainmenu::main(&chosen, &font).await,
+            0 => next_scene = scene::mainmenu::main(&chosen, &font, &cells).await,
             1 => next_scene = scene::playsettings::main(&font, &mut x_input, &mut y_input).await,
+            2 => next_scene = scene::options::main(&font).await,
+            3 => next_scene = scene::textures::main(&font).await,
             5 => next_scene = scene::credits::main(&font).await,
             6 => process::exit(0),
             _ => ()

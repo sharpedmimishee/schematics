@@ -1,4 +1,4 @@
-use macroquad::{math::vec2, prelude, text::Font, ui::root_ui, window::next_frame};
+use macroquad::{camera::Camera2D, math::vec2, prelude, text::{Font, TextParams}, ui::root_ui, window::next_frame};
 fn adjuster(ratio: u32, max: u32, min: u32) -> f32 {
     let default: f32 = prelude::screen_width()/ratio as f32;
     if (max as f32) < default {return max as f32};
@@ -6,31 +6,33 @@ fn adjuster(ratio: u32, max: u32, min: u32) -> f32 {
     return default;
 }
 pub async fn main(font: &Font) -> u32 {
-    let credits_msg: String = String::from(
-        "programs - mimisheesharp(The Sharp Cell, etc.)
-assets(includes concept, etc.) - The Flipper Cell, The Single Cell Generator, plasticgaming99, mimisheesharp(The Sharp Cell, etc.)
-code contributes - plasticgaming99,
-musics - I'll do perhaps, but if you want to do, please do it.
-concepts - The Flipper Cell, The Single Cell Generator, plasticgaming99, mimisheesharp(The Sharp Cell, etc.)"
-            );
+        
     loop {
+        
+        // prelude::set_default_camera();
+        prelude::clear_background(prelude::Color::from_hex(0x241e47));
         let exit = root_ui().button(vec2(20.0, 25.0), "   Exit   ");
-        let _title = prelude::draw_text_ex("Credits", 20.0, 50.0, 
-        prelude::TextParams {
-            font: Some(font),
-            font_size: adjuster(5, 55, 40) as u16,
-            color: prelude::Color::from_hex(0x604394),
-            ..Default::default()
-        });
-
         // root_ui().scroll().
-        let credits = prelude::draw_text_ex(&credits_msg, 20.0, 50.0, 
-        prelude::TextParams {
+        prelude::draw_text_ex("programs - mimisheesharp(The Sharp Cell, etc.)", 300.0, 50.0, 
+        TextParams {
             font: Some(font),
-            font_size: adjuster(5, 55, 40) as u16,
-            color: prelude::Color::from_hex(0x604394),
-            ..Default::default()
-        });
+             ..Default::default()});
+        prelude::draw_text_ex("assets(includes concept, etc.) - The Flipper Cell, The Single Cell Generator, plasticgaming99, mimisheesharp(The Sharp Cell, etc.)", 300.0, 70.0, 
+        TextParams {
+            font: Some(font),
+             ..Default::default()});
+        prelude::draw_text_ex("code contributes - plasticgaming99", 300.0, 90.0, 
+        TextParams {
+            font: Some(font),
+             ..Default::default()});
+        prelude::draw_text_ex("musics - I'll do perhaps, but if you want to do, please do it.", 300.0, 110.0, 
+        TextParams {
+            font: Some(font),
+             ..Default::default()});
+        prelude::draw_text_ex("concepts - The Flipper Cell, The Single Cell Generator, plasticgaming99, mimisheesharp(The Sharp Cell, etc.)", 300.0, 130.0, 
+        TextParams {
+            font: Some(font),
+             ..Default::default()});
         if exit {
             return 0;
         }
