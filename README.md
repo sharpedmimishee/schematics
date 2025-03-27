@@ -21,6 +21,7 @@ Untitled Audio by the flipper cell
 Libraries  
 macroquad.rs (https://github.com/not-fl3/macroquad/)
 - Apache licence https://github.com/sharpedmimishee/schematics/blob/master/LICENSE-APACHE
-- MIT Licence https://github.com/not-fl3/macroquad/blob/master/LICENSE-MIT  
+- MIT Licence https://github.com/not-fl3/macroquad/blob/master/LICENSE-MIT
+
 mlua (https://github.com/mlua-rs/mlua)
 - MIT Licence https://github.com/mlua-rs/mlua/blob/main/LICENSE
