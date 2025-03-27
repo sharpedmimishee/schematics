@@ -11,12 +11,13 @@ Background(void) Texture by the single cell generator
 Doughnut Texture by thesharpcell(sharpedmimishee)  
 Input Text Texture by thesharpcell(sharpedmimishee)  
 Pen Texture by thesharpcell(sharpedmimishee)  
-A new theme Audio by thesharpcell(sharpedmimishee)  
-A new theme Audio too slow by thesharpcell(sharpedmimishee)  
-A new theme Audio with koto by thesharpcell(sharpedmimishee)  
-A decline era Audio by thesharpcell(sharpedmimishee)  
-Untitled Audio by the flipper cell  
-- Terms: copyright free, (can be used commercial use. guarantee nothing. also, if you would like to list them in credits, please list them.)  
+A new theme by thesharpcell(sharpedmimishee)  
+A new theme too slow by thesharpcell(sharpedmimishee)  
+A new theme Audio with by thesharpcell(sharpedmimishee)  
+A decline era by thesharpcell(sharpedmimishee)  
+Repetitive by thesharpcell(sharpedmimishee)  
+Untitled by the flipper cell  
+- Terms: copyright free, (can be used commercial use. guarantee nothing. also, if you would like to list them in credits, please list them.)
 
 Libraries  
 macroquad.rs (https://github.com/not-fl3/macroquad/)
