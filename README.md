@@ -16,5 +16,11 @@ A new theme Audio too slow by thesharpcell(sharpedmimishee)
 A new theme Audio with koto by thesharpcell(sharpedmimishee)  
 A decline era Audio by thesharpcell(sharpedmimishee)  
 Untitled Audio by the flipper cell  
-- Terms: copyright free, (can be used commercial use. guarantee nothing. also, if you would like to list them in credits, please list them.)
+- Terms: copyright free, (can be used commercial use. guarantee nothing. also, if you would like to list them in credits, please list them.)  
 
+Libraries  
+macroquad.rs (https://github.com/not-fl3/macroquad/)
+- Apache licence https://github.com/sharpedmimishee/schematics/blob/master/LICENSE-APACHE
+- MIT Licence https://github.com/not-fl3/macroquad/blob/master/LICENSE-MIT  
+mlua (https://github.com/mlua-rs/mlua)
+- MIT Licence https://github.com/mlua-rs/mlua/blob/main/LICENSE
