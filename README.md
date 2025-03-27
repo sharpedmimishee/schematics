@@ -17,7 +17,7 @@ A new theme Audio with by thesharpcell(sharpedmimishee)
 A decline era by thesharpcell(sharpedmimishee)  
 Repetitive by thesharpcell(sharpedmimishee)  
 Untitled by the flipper cell  
-- Terms: copyright free, (can be used commercial use. guarantee nothing. also, if you would like to list them in credits, please list them.)
+- Terms: You can use these without credits, (can be used commercial use. guarantee nothing. also, if you would like to list them in credits, please list them.)
 
 Libraries  
 macroquad.rs (https://github.com/not-fl3/macroquad/)
