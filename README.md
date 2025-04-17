@@ -21,7 +21,7 @@ Untitled by the flipper cell
 
 Libraries  
 macroquad.rs (https://github.com/not-fl3/macroquad/)
-- Apache license https://github.com/sharpedmimishee/schematics/blob/master/LICENSE-APACHE
+- Apache license https://github.com/sharpedmimishee/schematics/blob/main/LICENSE-APACHE
 - MIT License https://github.com/not-fl3/macroquad/blob/master/LICENSE-MIT
 
 mlua (https://github.com/mlua-rs/mlua)
